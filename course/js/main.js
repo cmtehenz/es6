@@ -211,3 +211,13 @@ var De = new Intl.NumberFormat('de-DE').format(number);
 
 console.log(En);
 console.log(De);
+
+// --- formatação moeda
+
+var USD = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(1098020.65);
+var BRL = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });
+
+console.log(USD);
+console.log(BRL.format(1098020.65));
+
+// --formatação de datas
