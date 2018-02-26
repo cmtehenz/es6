@@ -171,3 +171,33 @@ var Client = function (_Person) {
 var test = new Client(1, "Gustavo", "cmtehenz@gmail.com", "49 992121-3577");
 
 console.log(test.toString());
+
+var color1 = new Set();
+color1.add("red").add("green").add("red");
+
+if (color1.size === 2 && color1.has("red")) {
+    var _iteratorNormalCompletion2 = true;
+    var _didIteratorError2 = false;
+    var _iteratorError2 = undefined;
+
+    try {
+        for (var _iterator2 = color1.values()[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+            var key = _step2.value;
+
+            console.log(key);
+        }
+    } catch (err) {
+        _didIteratorError2 = true;
+        _iteratorError2 = err;
+    } finally {
+        try {
+            if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                _iterator2.return();
+            }
+        } finally {
+            if (_didIteratorError2) {
+                throw _iteratorError2;
+            }
+        }
+    }
+}
