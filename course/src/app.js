@@ -82,3 +82,35 @@ for(var i in list){
 for(let i of list){
     console.log(i);
 }
+
+class Person{
+    constructor(name, email, phone){
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+    }
+
+    toString(){
+        return `Name: ${this.name}
+                Email: ${this.email}
+                Phone: ${this.phone}
+                `;
+    }
+
+}
+
+class Client extends Person {
+    constructor(id, name, email, phone){
+        super(name, email, phone);
+        this.id = id;
+    };
+    toString(){
+        return `
+                ID: ${this.id}
+                ${super.toString()}`;
+    }
+}
+
+var test = new Client(1, "Gustavo", "cmtehenz@gmail.com", "49 992121-3577");
+
+console.log(test.toString());
