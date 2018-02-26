@@ -229,3 +229,15 @@ var DE = new Intl.DateTimeFormat("de-DE");
 console.log(US.format(new Date("2016-05-02")));
 console.log(BR.format(new Date("2016-05-22")));
 console.log(DE.format(new Date("2016-05-22")));
+
+//--- busca string
+
+console.log("hello".indexOf("ello") === 1);
+
+console.log("hello".startsWith("ello", 1));
+
+console.log("hello".endsWith("hel", 3));
+
+console.log("hello".includes("ell", 1));
+
+console.log("hello".includes("ll", 2));
