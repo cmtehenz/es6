@@ -45,3 +45,16 @@ class Color {
 let red = new Color("red123", "Red");
 
 console.log(red.getColor());
+
+let name = "Gustavo";
+let age = 30;
+//let text = 'name: ' + name + ' age: ' + age;
+
+let text = `
+    name: ${name}
+    age: ${age}
+`;
+
+
+console.log(text);
+

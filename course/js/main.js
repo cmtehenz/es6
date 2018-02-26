@@ -63,3 +63,11 @@ var Color = function () {
 var red = new Color("red123", "Red");
 
 console.log(red.getColor());
+
+var name = "Gustavo";
+var age = 30;
+//let text = 'name: ' + name + ' age: ' + age;
+
+var text = "\n    name: " + name + "\n    age: " + age + "\n";
+
+console.log(text);
