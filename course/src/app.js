@@ -115,6 +115,7 @@ var test = new Client(1, "Gustavo", "cmtehenz@gmail.com", "49 992121-3577");
 
 console.log(test.toString());
 
+// --- set date strutuure
 
 let color1 = new Set();
 color1.add("red").add("green").add("red");
@@ -124,3 +125,12 @@ if(color1.size === 2 && color1.has("red")){
         console.log(key);
     }
 }
+
+// --- formatação numero
+var number = 123456.34;
+var En = new Intl.NumberFormat('en-US').format(number);
+var De = new Intl.NumberFormat('de-DE').format(number);
+
+console.log(En);
+console.log(De);
+
