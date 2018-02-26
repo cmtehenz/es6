@@ -69,5 +69,16 @@ function test(valueA, valueB = 4){
     return valueA + valueB;
 }
 
-console.log(test(4));
+console.log(test(4)+ '----\n');
 
+var list = [ "test", 34, {name: "Gustavo"}];
+
+/*
+for(var i in list){
+    console.log(list[i]);
+}
+*/
+
+for(let i of list){
+    console.log(i);
+}
